@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <h1>Peça o seu orçamento agora mesmo!</h1>
+            <form id="myform" class="form-container">
+                <div class="input-container">
+                    <input class="form-input" placeholder=" " type="text" required>
+                    <label class="form-label" for="name">Nome</label>
+                </div>
+                <div class="input-container">
+                    <input class="form-input" placeholder=" " type="email" required>
+                    <label class="form-label" for="email">E-mail</label>
+                </div>
+                <div class="input-container">
+                    <input class="form-input" placeholder=" " type="tel" required>
+                    <label class="form-label" for="telephone">Telefone</label>
+                </div>
+                <div class="dropdown" data-dropdown>
+                    <button type="button" class="dropdown-text" data-dropdown-button>
+                        Escolha o serviço que deseja
+                        <img class="expand-more-icon" src="images/expand_more_black_24dp.svg" alt="expand-more">
+                    </button>
+                    <div class="dropdown-menu information-grid">
+                        <div option>
+                           <input type="radio" name="radio" id="lorem" required>
+                           <label for="lorem">lorem</label>
+                        </div>
+                        <div option>
+                           <input type="radio" name="radio" id="ipsum" required>
+                           <label for="ipsum">ipsum</label>
+                        </div>
+                        <div option>
+                           <input type="radio" name="radio" id="dolor" required>
+                           <label for="dolor">dolor</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-container textarea-grid">
+                    <textarea class="form-input" placeholder=" " type="text"></textarea>
+                    <label class="form-label" for="message">Mensagem</label>
+                </div>
+            </form>
+            <button type="submit" form="myform" class="submit-button">Enviar</button>
+        </div>
+    </main>
+</body>
+</html>
